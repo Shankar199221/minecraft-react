@@ -7,6 +7,7 @@ export const Camera = (props) => {
 
   useEffect(() => {
     setDefaultCamera(ref.current)
+     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   return <perspectiveCamera ref={ref} {...props}/>

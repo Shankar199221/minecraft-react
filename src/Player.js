@@ -28,6 +28,7 @@ export const Player = (props) => {
     api.velocity.subscribe((v) => (
       velocity.current = v
     ))
+     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   useFrame(() => {
