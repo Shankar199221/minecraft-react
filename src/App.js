@@ -12,7 +12,10 @@ function App() {
   const cubes = useCubeStore(state => state.cubes)
 
   return (
-    <Canvas shadowMap sRGB gl={{ alpha: false }}>
+   <div className="app">
+      <div><h2>Developed By @: <span>Siva Sankar Reddy</span></h2></div>
+     <div className="app__canvas">
+     <Canvas shadowMap sRGB gl={{ alpha: false }}>
       <Camera />
       <Sky sunPosition={new Vector3(100, 10, 100)}/>
       <ambientLight intensity={0.3}/>
@@ -30,6 +33,9 @@ function App() {
         }
       </Physics>
     </Canvas>
+     </div>
+     
+   </div>
   )
 }
 

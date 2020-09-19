@@ -26,3 +26,29 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
   color: black;
 }
+.app {
+  display: flex;
+  flex-direction: column;
+}
+.app__canvas {
+  float: 1;
+  height: 100vh;
+}
+div span {
+  display: block;
+  color: orangered;
+  font-style: italic;
+  position: relative;
+
+}
+/* div span ::before {
+  content: '';
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  width: 10px;
+  background-color: ivory;
+} */
